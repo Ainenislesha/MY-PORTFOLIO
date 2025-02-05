@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slesha Aineni - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #6C63FF;
+            --secondary: #2F2E41;
+            --accent: #FF6584;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: #f9f9f9;
+            color: var(--secondary);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .profile-header {
+            text-align: center;
+            padding: 2rem;
+            background: var(--primary);
+            color: white;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+        }
+
+        .profile-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        .section {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            margin: 0.3rem;
+            font-size: 0.9rem;
+        }
+
+        .timeline-item {
+            border-left: 3px solid var(--primary);
+            padding-left: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .project-card {
+            background: #fff;
+            border: 1px solid #eee;
+            padding: 1.5rem;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="profile-header">
+            <h1>Slesha Aineni</h1>
+            <p>Computer Science Student & UI/UX Enthusiast</p>
+            <div class="contact-info">
+                <a href="#"><i class="fas fa-envelope"></i> 24wh1a05y6@bvrithyderabad.edu.in</a>
+                <a href="#"><i class="fas fa-phone"></i> +91 6302704123</a>
+            </div>
+        </header>
+
+        <div class="grid">
+            <div class="section">
+                <h2>👩🎓 Education</h2>
+                <div class="timeline-item">
+                    <h3>BVRIT College of Engineering for Women</h3>
+                    <p>Hyderabad, India</p>
+                    <p>2022-2026</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Sri Chaitanya College</h3>
+                    <p>Intermediate (93.5%)</p>
+                    <p>2022-2024</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🛠️ Skills</h2>
+                <div class="skills">
+                    <span class="skill-tag">C Programming</span>
+                    <span class="skill-tag">Problem Solving</span>
+                    <span class="skill-tag">UI/UX Design</span>
+                    <span class="skill-tag">Figma</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Cybersecurity</span>
+                    <span class="skill-tag">Video Editing</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>💻 Projects</h2>
+            <div class="grid">
+                <div class="project-card">
+                    <h3>Bit Stuffing Demonstration</h3>
+                    <p>Created a sample implementation demonstrating data link layer bit stuffing technique</p>
+                </div>
+                <div class="project-card">
+                    <h3>Anti-Phishing System</h3>
+                    <p>Developing cybersecurity solution to prevent phishing attacks and online scams</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🌐 Links</h2>
+            <div class="links">
+                <a href="https://linkedin.com/in/aineni-slesha-b559a7341" class="skill-tag">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://drive.google.com/file/d/1tY5obX_HaaOBGXPxQixra8bdpQP2mWpx/view" class="skill-tag">
+                    <i class="fas fa-file-pdf"></i> Resume PDF
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
